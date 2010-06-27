@@ -1,0 +1,62 @@
+# Sample Slide Show (S9) template package manifest using Slidy W3C Blue style package
+# Change as desired/needed
+#
+# Configured to use the following headers in slides.html.erb:
+# 
+# author: Your Name Here
+# title: Your Slide Show Title Here
+# subtitle: Your Subtitle Here
+# copyright: footer: Your Footer Here
+#
+# Questions? Comments?
+# Send them along to the Free Web Slide Show Alternatives (S5, S6, S9 And Friends) Forum/Mailing List. 
+# http://groups.google.com/group/webslideshow
+
+__file__.html slides.html.erb
+
+# scripts
+
+slidy/slidy.js
+
+# styles
+
+slidy/slidy.css
+slidy/w3c-ac.css
+slidy/w3c-blue2.css
+slidy/w3c-blue.css
+
+# graphics
+
+slidy/bullet-fold-dim.gif
+slidy/bullet-fold.gif
+slidy/bullet-nofold-dim.gif
+slidy/bullet-nofold.gif
+slidy/bullet-unfold-dim.gif
+slidy/bullet-unfold.gif
+slidy/fold-bright.gif
+slidy/fold-dim.gif
+slidy/fold.gif
+slidy/nofold-dim.gif
+slidy/unfold-bright.gif
+slidy/unfold-dim.gif
+slidy/unfold.gif
+
+slidy/fold.bmp
+slidy/fold-dim.bmp
+slidy/nofold.bmp
+slidy/nofold-dim.bmp
+slidy/unfold.bmp
+slidy/unfold-dim.bmp
+
+slidy/bullet.png
+slidy/icon-blue.png
+
+slidy/keys.jpg
+
+# w3c logos
+
+slidy/w3c-logo-blue.gif
+slidy/w3c-logo-slanted.jpg
+slidy/w3c-logo-blue.svg
+slidy/w3c-logo-white.gif
+slidy/w3c-logo-white.svg
