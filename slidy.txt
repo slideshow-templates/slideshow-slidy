@@ -52,6 +52,7 @@ slidy/bullet.png
 slidy/icon-blue.png
 
 slidy/keys.jpg
+slidy/keys2.jpg
 
 # w3c logos
 

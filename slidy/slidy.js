@@ -78,6 +78,7 @@ var viewAll = 0;      // 1 to view all slides + handouts
 var wantToolbar = 1;   // 0 if toolbar isn't wanted
 var mouseClickEnabled = true;  // enables left click for next slide
 var scrollhack = 0;   // IE work around for position: fixed
+var key_wanted = false;
 
 var helpAnchor;  // used for keyboard focus hack in showToolbar()
 var helpPage = "http://www.w3.org/Talks/Tools/Slidy/help.html";
@@ -277,6 +278,20 @@ strings_ru[helpText] =
     "Перемещайтесь кликая мышкой, используя клавишу пробел, стрелки" +
     "влево/вправо или Pg Up и Pg Dn. Клавиши S и B меняют размер шрифта.";
 
+var strings_sv = {
+   "slide":"sida",
+   "help?":"hjälp",
+   "contents?":"innehåll",
+   "table of contents":"innehållsförteckning",
+   "Table of Contents":"Innehållsförteckning",
+   "restart presentation":"visa presentationen från början",
+   "restart?":"börja om"
+   };
+
+strings_sv[helpText] =
+     "Bläddra med ett klick med vänstra musknappen, mellanslagstangenten, " +
+     "vänster- och högerpiltangenterna eller tangenterna Pg Up, Pg Dn. " +
+     "Använd tangenterna S och B för att ändra textens storlek.";
 
 // each such language array is declared in the localize array
 // used indirectly as in help.innerHTML = "help".localize();
@@ -292,7 +307,8 @@ var localize = {
      "el":strings_el,
      "jp":strings_ja,
      "zh":strings_zh,
-     "ru":strings_ru
+     "ru":strings_ru,
+     "sv":strings_sv
    };
 
 /* general initialization */
@@ -359,6 +375,8 @@ function startup()
    document.onclick = mouseButtonClick;
    document.onmouseup = mouseButtonUp;
    document.onkeydown = keyDown;
+   if (opera)
+     document.onkeypress = keyPress;
    window.onresize  = resized;
    window.onscroll = scrolled;
    window.onunload = unloaded;
@@ -809,6 +827,8 @@ function keyDown(event)
     if (!event)
       var event = window.event;
 
+    key_wanted = false;
+
     // kludge around NS/IE differences 
     if (window.event)
        key = window.event.keyCode;
@@ -836,6 +856,8 @@ function keyDown(event)
       if (key == 27 || key == 84 || key == 67)
         return cancel(event);
     }
+
+    key_wanted = true;
 
     if (key == 34) // Page Down
     {
@@ -958,8 +980,17 @@ function keyDown(event)
       //alert("lastShown is " + lastShown);
     //else alert("key code is "+ key);
 
-
+    key_wanted = false;
     return true;
+}
+
+// only used for Opera
+function keyPress(event)
+{
+  if (!event)
+    event = window.event
+
+  return key_wanted ? cancel(event) : true;
 }
 
 // make note of length of selected text
@@ -2207,6 +2238,7 @@ function addToolbar()
       toolbar.style.fontSize = "60%";
       toolbar.style.color = "red";
       toolbar.borderWidth = 0;
+      toolbar.className = "toolbar";
       toolbar.style.background = "rgb(240,240,240)";
 
       // would like to have help text left aligned

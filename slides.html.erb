@@ -1,65 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-US">
 <head>
-<title><%= @headers['title'] %></title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="Slide Show (S9)" />
 <meta name="author" content="<%= @headers['author']%>" />
 <meta name="copyright" content="<%= @headers['copyright'] %>" />
-<meta name="font-size-adjustment" content="-1" />
+<meta name="font-size-adjustment" content="-2" />
+
+<title><%= @headers['title'] %></title>
 
 <link rel="stylesheet" href="slidy/slidy.css" type="text/css" media="screen, projection, print" />
 <link rel="stylesheet" href="slidy/w3c-blue2.css" type="text/css" media="screen, projection, print" />
-<script src="slidy/slidy.js" type="text/javascript">
+<script src="slidy/slidy.js" charset="utf-8" type="text/javascript">
 </script>
 </head>
 <body>
-<!-- this defines the slide background -->
+<div class="background"><img alt="" id="head-icon" src="slidy/icon-blue.png" /><object id="head-logo"
+data="slidy/w3c-logo-white.svg" type="image/svg+xml" title="W3C logo"><a href="http://www.w3.org/"><img
+alt="W3C logo" id="head-logo-fallback" src="slidy/w3c-logo-white.gif" /></a></object></div>
 
-<div class="background">
-  <div class="header">
-  <!-- sized and colored via CSS -->
-  </div>
+<div class="background slanty">
+<img src="slidy/w3c-logo-slanted.jpg" alt="slanted W3C logo" />
+</div>
+<div class="slide cover title">
   <!-- hidden style graphics to ensure they are saved with other content -->
   <img class="hidden" src="slidy/bullet.png" alt="" />
-  <img class="hidden" src="slidy/fold.bmp" alt="" />
-  <img class="hidden" src="slidy/unfold.bmp" alt="" />
-  <img class="hidden" src="slidy/fold-dim.bmp" alt="" />
-  <img class="hidden" src="slidy/nofold-dim.bmp" alt="" />
-  <img class="hidden" src="slidy/unfold-dim.bmp" alt="" />
+  <img class="hidden" src="slidy/fold.gif" alt="" />
+  <img class="hidden" src="slidy/unfold.gif" alt="" />
+  <img class="hidden" src="slidy/fold-dim.gif" alt="" />
+  <img class="hidden" src="slidy/nofold-dim.gif" alt="" />
+
+  <img class="hidden" src="slidy/unfold-dim.gif" alt="" />
   <img class="hidden" src="slidy/bullet-fold.gif" alt="" />
   <img class="hidden" src="slidy/bullet-unfold.gif" alt="" />
   <img class="hidden" src="slidy/bullet-fold-dim.gif" alt="" />
   <img class="hidden" src="slidy/bullet-nofold-dim.gif" alt="" />
   <img class="hidden" src="slidy/bullet-unfold-dim.gif" alt="" />
 
-  <div class="footer">
-  <object id="w3c-logo"
-  data="slidy/w3c-logo-blue.svg" type="image/svg+xml"
-  title="W3C logo"><a href="http://www.w3.org/"><img
-  alt="W3C logo" id="w3c-logo-fallback"
-  src="slidy/w3c-logo-blue.gif" /></a></object>
-
-  <!-- modify the following text as appropriate -->
-  <%= @headers['title'] %><br />
-  <%= @headers['subtitle'] %><!-- Event, Location, Month Year --> 
-  </div>
-</div>
-
-<div class="slide cover">
-<div class="header">
+<img src="slidy/keys2.jpg" alt=
+"Cover page images (keys)" class="cover" /><br clear="all" />
 <h1><%= @headers['title'] %></h1>
-<p><%= @headers['author']%></p>
+
+<p><%= @headers['author']%><br />
+<br />
+<br />
+<br />
+<br /><em>Hit the space bar for next slide</em></p>
 </div>
-<img src="slidy/keys.jpg" class="cover"
-alt="W3C as letters on 3 plastic buttons from a keyboard" />
-<h2><%= @headers['subtitle'] %></h2><!-- Event, Location, Month Year --> 
-</div>
+
 
 <%= @content %>
-
 
 </body>
 </html>
