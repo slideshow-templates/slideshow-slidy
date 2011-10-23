@@ -1,3 +1,4 @@
+##################
 # Sample Slide Show (S9) template package manifest using Slidy W3C Blue style package
 # Change as desired/needed
 #
@@ -5,59 +6,84 @@
 # 
 # author: Your Name Here
 # title: Your Slide Show Title Here
-# subtitle: Your Subtitle Here
 # copyright: footer: Your Footer Here
 #
 # Questions? Comments?
-# Send them along to the Free Web Slide Show Alternatives (S5, S6, S9 And Friends) Forum/Mailing List. 
+# Send them along to the Free Web Slide Show Alternatives (S5, S6, S9, Slidy And Friends) Forum/Mailing List. 
 # http://groups.google.com/group/webslideshow
 
-__file__.html slides.html.erb
+__file__.html slides.blank.html.erb
+__file__.w3c.html slides.w3c.html.erb
 
 # scripts
 
-slidy/slidy.js
+scripts/slidy.js
 
 # styles
 
-slidy/slidy.css
-slidy/w3c-ac.css
-slidy/w3c-blue2.css
-slidy/w3c-blue.css
+styles/slidy.css
+styles/w3c-blue.css
+
+# help
+
+help/help.html
+help/help.html.ca
+help/help.html.de
+help/help.html.en
+help/help.html.es
+help/help.html.fr
+help/help.html.hu
+help/help.html.nl
+help/help.html.pl
+help/help.html.pt-br
+help/help.html.pt_br
+help/help.html.sv
+help/help.pt-br.html
 
 # graphics
 
-slidy/bullet-fold-dim.gif
-slidy/bullet-fold.gif
-slidy/bullet-nofold-dim.gif
-slidy/bullet-nofold.gif
-slidy/bullet-unfold-dim.gif
-slidy/bullet-unfold.gif
-slidy/fold-bright.gif
-slidy/fold-dim.gif
-slidy/fold.gif
-slidy/nofold-dim.gif
-slidy/unfold-bright.gif
-slidy/unfold-dim.gif
-slidy/unfold.gif
+graphics/bullet-fold-dim.gif
+graphics/bullet-fold-dim.png
+graphics/bullet-fold.gif
+graphics/bullet-fold.png
+graphics/bullet-nofold-dim.gif
+graphics/bullet-nofold-dim.png
+graphics/bullet-nofold.gif
+graphics/bullet-nofold.png
+graphics/bullet-unfold-dim.gif
+graphics/bullet-unfold-dim.png
+graphics/bullet-unfold.gif
+graphics/bullet-unfold.png
+graphics/bullet.png
 
-slidy/fold.bmp
-slidy/fold-dim.bmp
-slidy/nofold.bmp
-slidy/nofold-dim.bmp
-slidy/unfold.bmp
-slidy/unfold-dim.bmp
+graphics/example.png
+graphics/example.svg
 
-slidy/bullet.png
-slidy/icon-blue.png
+graphics/face1.gif
+graphics/face2.gif
+graphics/face3.gif
+graphics/face4.gif
 
-slidy/keys.jpg
-slidy/keys2.jpg
+graphics/fold-bright.gif
+graphics/fold-dim.bmp
+graphics/fold-dim.gif
+graphics/fold.bmp
+graphics/fold.gif
 
-# w3c logos
+graphics/icon-blue.png
+graphics/keys2.jpg
 
-slidy/w3c-logo-blue.gif
-slidy/w3c-logo-slanted.jpg
-slidy/w3c-logo-blue.svg
-slidy/w3c-logo-white.gif
-slidy/w3c-logo-white.svg
+graphics/nofold-dim.bmp
+graphics/nofold-dim.gif
+graphics/nofold.bmp
+graphics/unfold-bright.gif
+graphics/unfold-dim.bmp
+graphics/unfold-dim.gif
+graphics/unfold.bmp
+graphics/unfold.gif
+
+graphics/w3c-logo-blue.gif
+graphics/w3c-logo-blue.svg
+graphics/w3c-logo-slanted.jpg
+graphics/w3c-logo-white.gif
+graphics/w3c-logo-white.svg

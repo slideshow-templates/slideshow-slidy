@@ -1,6 +1,6 @@
 /* slidy.css
 
-   Copyright (c) 2005 W3C (MIT, ERCIM, Keio), All Rights Reserved.
+   Copyright (c) 2005-2010 W3C (MIT, ERCIM, Keio), All Rights Reserved.
    W3C liability, trademark, document use and software licensing
    rules apply, see:
 
@@ -19,8 +19,6 @@ body
   font-size: 14pt;
 }
 
-.hidden { display: none; visibility: hidden }
-
 div.toolbar {
   position: fixed; z-index: 200;
   top: auto; bottom: 0; left: 0; right: 0;
@@ -28,24 +26,62 @@ div.toolbar {
   padding-left: 1em;
   padding-right: 1em; 
   font-size: 60%;
-  color: red; background: rgb(240,240,240);
+  color: red;
+  background-color: rgb(240,240,240);
+  border-top: solid 1px rgb(180,180,180);
 }
 
-div.background {
-  display: none;
+div.toolbar span.copyright {
+  color: black;
+  margin-left: 0.5em;
 }
 
-div.handout {
-  margin-left: 20px;
-  margin-right: 20px;
+div.initial_prompt {
+  position: absolute;
+  z-index: 1000;
+  bottom: 1.2em;
+  width: 100%;
+  background-color: rgb(200,200,200);
+  opacity: 0.35;
+  background-color: rgb(200,200,200, 0.35);
+  cursor: pointer;
 }
 
-div.slide.titlepage {
+div.initial_prompt p.help {
   text-align: center;
 }
 
-div.slide.titlepage.h1 {
-  padding-top: 40%;
+div.initial_prompt p.close {
+  text-align: right;
+  font-style: italic;
+}
+
+div.slidy_toc {
+  position: absolute;
+  z-index: 300;
+  width: 60%;
+  max-width: 30em;
+  height: 30em;
+  overflow: auto;
+  top: auto;
+  right: auto;
+  left: 4em;
+  bottom: 4em;
+  padding: 1em;
+  background: rgb(240,240,240);
+  border-style: solid;
+  border-width: 2px;
+  font-size: 60%;
+}
+
+div.slidy_toc .toc_heading {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 1em;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(180,180,180);
+  border-bottom-width: 1px;
 }
 
 div.slide {
@@ -65,8 +101,23 @@ div.slide {
   background-color: transparent;
 }
 
-/* this rule is hidden from IE 6 and below which don't support + selector */
-div.slide + div[class].slide { page-break-before: always;}
+div.background {
+  display: none;
+}
+
+div.handout {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+div.slide.titlepage {
+  text-align: center;
+}
+
+div.slide.titlepage h1 {
+  padding-top: 10%;
+  margin-right: 0;
+}
 
 div.slide h1 {
   padding-left: 0;
@@ -128,19 +179,6 @@ pre {
 }
 
 li pre { margin-left: 0; }
-
-@media print {
-  div.slide {
-     display: block;
-     visibility: visible;
-     position: relative;
-     border-top-style: solid;
-     border-top-width: thin;
-     border-top-color: black;
-  }
-  div.slide pre { font-size: 60%; padding-left: 0.5em; }
-  div.handout { display: block; visibility: visible; }
-}
 
 blockquote { font-style: italic }
 
@@ -274,45 +312,90 @@ ol.outline ol { list-style-type:lower-alpha }
 
 ol.outline li.nofold {
   padding: 0 0 0 20px;
-  background: transparent url(nofold-dim.gif) no-repeat 0px 0.5em;
+  background: transparent url(../graphics/nofold-dim.gif) no-repeat 0px 0.5em;
 }
 ol.outline li.unfolded {
   padding: 0 0 0 20px;
-  background: transparent url(fold-dim.gif) no-repeat 0px 0.5em;
+  background: transparent url(../graphics/fold-dim.gif) no-repeat 0px 0.5em;
 }
 ol.outline li.folded {
   padding: 0 0 0 20px;
-  background: transparent url(unfold-dim.gif) no-repeat 0px 0.5em;
+  background: transparent url(../graphics/unfold-dim.gif) no-repeat 0px 0.5em;
 }
 ol.outline li.unfolded:hover {
   padding: 0 0 0 20px;
-  background: transparent url(fold.gif) no-repeat 0px 0.5em;
+  background: transparent url(../graphics/fold.gif) no-repeat 0px 0.5em;
 }
 ol.outline li.folded:hover {
   padding: 0 0 0 20px;
-  background: transparent url(unfold.gif) no-repeat 0px 0.5em;
+  background: transparent url(../graphics/unfold.gif) no-repeat 0px 0.5em;
 }
 
 ul.outline li.nofold {
   padding: 0 0 0 20px;
-  background: transparent url(nofold-dim.gif) no-repeat 0px 0.5em;
+  background: transparent url(../graphics/nofold-dim.gif) no-repeat 0px 0.5em;
 }
 ul.outline li.unfolded {
   padding: 0 0 0 20px;
-  background: transparent url(fold-dim.gif) no-repeat 0px 0.5em;
+  background: transparent url(../graphics/fold-dim.gif) no-repeat 0px 0.5em;
 }
 ul.outline li.folded {
   padding: 0 0 0 20px;
-  background: transparent url(unfold-dim.gif) no-repeat 0px 0.5em;
+  background: transparent url(../graphics/unfold-dim.gif) no-repeat 0px 0.5em;
 }
 ul.outline li.unfolded:hover {
   padding: 0 0 0 20px;
-  background: transparent url(fold.gif) no-repeat 0px 0.5em;
+  background: transparent url(../graphics/fold.gif) no-repeat 0px 0.5em;
 }
 ul.outline li.folded:hover {
   padding: 0 0 0 20px;
-  background: transparent url(unfold.gif) no-repeat 0px 0.5em;
+  background: transparent url(../graphics/unfold.gif) no-repeat 0px 0.5em;
 }
 
 /* for slides with class "title" in table of contents */
 a.titleslide { font-weight: bold; font-style: italic }
+
+/*
+ hide images for work around for save as bug
+ where browsers fail to save images used by CSS
+*/
+img.hidden { display: none; visibility: hidden }
+div.initial_prompt { display: none; visibility: hidden }
+
+  div.slide {
+     visibility: visible;
+     position: inherit;
+  }
+  div.handout {
+     border-top-style: solid;
+     border-top-width: thin;
+     border-top-color: black;
+  }
+
+@media screen {
+  .hidden { display: none; visibility: visible }
+
+  div.slide.hidden { display: block; visibility: visible }
+  div.handout.hidden { display: block; visibility: visible }
+  div.background { display: none; visibility: hidden }
+  body.single_slide div.initial_prompt { display: block; visibility: visible }
+  body.single_slide div.background { display: block; visibility: visible }
+  body.single_slide div.background.hidden { display: none; visibility: hidden }
+  body.single_slide .invisible { visibility: hidden }
+  body.single_slide .hidden { display: none; visibility: hidden }
+  body.single_slide div.slide { position: absolute }
+  body.single_slide div.handout { display: none; visibility: hidden }
+}
+
+@media print {
+  .hidden { display: block; visibility: visible }
+
+  div.slide pre { font-size: 60%; padding-left: 0.5em; }
+  div.toolbar { display: none; visibility: hidden; }
+  div.slidy_toc { display: none; visibility: hidden; }
+  div.background { display: none; visibility: hidden; }
+  div.slide { page-break-before: always }
+  /* :first-child isn't reliable for print media */
+  div.slide.first-slide { page-break-before: avoid }
+}
+

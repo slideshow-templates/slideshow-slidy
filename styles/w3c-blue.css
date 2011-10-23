@@ -1,6 +1,6 @@
 /* w3c-blue.css
 
-   Copyright (c) 2005 W3C (MIT, ERCIM, Keio), All Rights Reserved.
+   Copyright (c) 2005-2010 W3C (MIT, ERCIM, Keio), All Rights Reserved.
    W3C liability, trademark, document use and software licensing
    rules apply, see:
 
@@ -19,30 +19,11 @@ body
   font-size: 14pt;
 }
 
-div.toolbar {
-  position: fixed; z-index: 200;
-  top: auto; bottom: 0; left: 0; right: 0;
-  height: 1.2em; text-align: right;
-  padding-left: 1em;
-  padding-right: 1em; 
-  font-size: 60%;
-  color: red; background: rgb(240,240,240);
-}
-
-div.background {
-  display: none;
-}
-
-div.handout {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
 div.slide.titlepage {
   text-align: center;
 }
 
-div.slide.titlepage.h1 {
+div.slide.titlepage h1 {
   padding-top: 40%;
 }
 
@@ -71,7 +52,7 @@ div.background {
   padding: 0 0 0 0.2em;
   margin: 0 0 0 0;
   border-width: 0;
-  background-color: #90A7D0;
+  background-color: #728ec2;
 }
 
 div.background img {
@@ -82,19 +63,18 @@ div.background img {
 div.slide + div[class].slide { page-break-before: always;}
 
 div.slide h1 {
-  padding-left: 0.1em;
-  padding-right: 0;
+  padding-left: 3em;
+  padding-right: 3em;
   padding-top: 0.1em;
   margin-bottom: 0.8em;
   margin-top: -0.05em;
-  margin-left: 3em;
-  margin-right: 5em;
+  margin-left: 0;
+  margin-right: 0;
   min-height: 2.3em;
   color: white;
   height: 2.2em;
   font-size: 160%;
   line-height: 1.1em;
-  background: #90A7D0;;
 }
 
 div.slide h1 a {
@@ -127,7 +107,7 @@ div.slide h1 a:active {
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 1em;
-  background:  #90A7D0;
+  background:  #728ec2;
   border-width: 0;
   height: 3em;
   max-width: 3em;
@@ -146,7 +126,7 @@ div.slide h1 a:active {
   width: 4.8em;
   float: right;
   z-index: 2;
-  background: #90A7D0;
+  background: #728ec2;
 }
 
 #head-logo-fallback {
@@ -290,7 +270,7 @@ ul li {
   list-style: none;
   margin: 0.1em 0em 0.6em 0;
   padding: 0 0 0 40px;
-  background: transparent url(bullet.png) no-repeat 5px 8px;
+  background: transparent url(../graphics/bullet.png) no-repeat 5px 0.3em;
   line-height: 140%;
 }
 
@@ -343,65 +323,65 @@ ol.outline ol { list-style-type:lower-alpha }
 
 ol.outline li.nofold {
   padding: 0 0 0 20px;
-  background: transparent url(nofold-dim.gif) no-repeat 0px 0.5em;
+  background: transparent url(../graphics/nofold-dim.gif) no-repeat 0px 0.3em;
 }
 ol.outline li.unfolded {
   padding: 0 0 0 20px;
-  background: transparent url(fold-dim.gif) no-repeat 0px 0.5em;
+  background: transparent url(../graphics/fold-dim.gif) no-repeat 0px 0.3em;
 }
 ol.outline li.folded {
   padding: 0 0 0 20px;
-  background: transparent url(unfold-dim.gif) no-repeat 0px 0.5em;
+  background: transparent url(../graphics/unfold-dim.gif) no-repeat 0px 0.3em;
 }
 ol.outline li.unfolded:hover {
   padding: 0 0 0 20px;
-  background: transparent url(fold.gif) no-repeat 0px 0.5em;
+  background: transparent url(../graphics/fold.gif) no-repeat 0px 0.3em;
 }
 ol.outline li.folded:hover {
   padding: 0 0 0 20px;
-  background: transparent url(unfold.gif) no-repeat 0px 0.5em;
+  background: transparent url(../graphics/unfold.gif) no-repeat 0px 0.3em;
 }
 
 ul.outline li.nofold {
   padding: 0 0 0 52px;
-  background: transparent url(bullet-nofold-dim.gif) no-repeat 5px 8px;
+  background: transparent url(../graphics/bullet-nofold-dim.gif) no-repeat 5px 0.3em;
 }
 ul.outline li.unfolded {
   padding: 0 0 0 52px;
-  background: transparent url(bullet-fold-dim.gif) no-repeat 5px 8px;
+  background: transparent url(../graphics/bullet-fold-dim.gif) no-repeat 5px 0.3em;
 }
 ul.outline li.folded {
   padding: 0 0 0 52px;
-  background: transparent url(bullet-unfold-dim.gif) no-repeat 5px 8px;
+  background: transparent url(../graphics/bullet-unfold-dim.gif) no-repeat 5px 0.3em;
 }
 ul.outline li.unfolded:hover {
   padding: 0 0 0 52px;
-  background: transparent url(bullet-fold.gif) no-repeat 5px 8px;
+  background: transparent url(../graphics/bullet-fold.gif) no-repeat 5px 0.3em;
 }
 ul.outline li.folded:hover {
   padding: 0 0 0 52px;
-  background: transparent url(bullet-unfold.gif) no-repeat 5px 8px;
+  background: transparent url(../graphics/bullet-unfold.gif) no-repeat 5px 0.3em;
 }
 
 li ul.outline li.nofold {
   padding: 0 0 0 21px;
-  background: transparent url(nofold-dim.gif) no-repeat 5px 8px;
+  background: transparent url(../graphics/nofold-dim.gif) no-repeat 5px 0.3em;
 }
 li ul.outline li.unfolded {
   padding: 0 0 0 21px;
-  background: transparent url(fold-dim.gif) no-repeat 5px 8px;
+  background: transparent url(../graphics/fold-dim.gif) no-repeat 5px 0.3em;
 }
 li ul.outline li.folded {
   padding: 0 0 0 21px;
-  background: transparent url(unfold-dim.gif) no-repeat 5px 8px;
+  background: transparent url(../graphics/unfold-dim.gif) no-repeat 5px 0.3em;
 }
 li ul.outline li.unfolded:hover {
   padding: 0 0 0 21px;
-  background: transparent url(fold.gif) no-repeat 5px 8px;
+  background: transparent url(../graphics/fold.gif) no-repeat 5px 0.3em;
 }
 li ul.outline li.folded:hover {
   padding: 0 0 0 21px;
-  background: transparent url(unfold.gif) no-repeat 5px 8px;
+  background: transparent url(../graphics/unfold.gif) no-repeat 5px 0.3em;
 }
 
 img.withBorder {
@@ -458,7 +438,7 @@ div[class="footer"] {
 
 div.slide.cover {
   color: white;
-  background-color: #90A7D0;
+  background-color: #728ec2;
   padding-top: 0;
   padding-right: 0;
   padding-left: 3em;
@@ -505,4 +485,9 @@ div.slide.cover a:hover, div.slide.cover a:active {
 
 div.comment { display: none; visibility: hidden }
 
-@media print { div.comment { display: block; visibility: visible } }
+@media print {
+ div.slide h1 { background: transparent; color: black }
+ div.slide.cover { background: transparent; color: black }
+ div.slide.cover h1 { background: transparent; color: black }
+ div.comment { display: block; visibility: visible } 
+}
