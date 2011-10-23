@@ -14,7 +14,7 @@ Note, the package is configured to use the following headers in `slides.html.erb
 
 If you want to try it yourself, install (fetch) the new template pack. Issue the command:
 
-    $ slideshow -f http://github.com/geraldb/slideshow-slidy/raw/master/slidy.txt
+    $ slideshow -f https://github.com/geraldb/slideshow-slidy/raw/master/slidy.txt
 
 To check if the new template got installed, use the `-l/--list` switch/command:
 
