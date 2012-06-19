@@ -1,0 +1,7 @@
+##############################
+# Quick Starter Template
+#
+# use like
+#  slideshow -q slidy
+
+slidy.text  sample.markdown
