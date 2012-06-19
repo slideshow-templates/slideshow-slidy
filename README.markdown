@@ -16,7 +16,7 @@ If you want to try it yourself, install (fetch) the new template pack. Issue the
 
     $ slideshow -f slidy
 
-Or as an alternative clone the template pack using git. Issue the commands:
+Or as an alternative clone the template pack using `git`. Issue the commands:
 
     $ cd ~/.slideshow/templates
     $ git clone git://github.com/geraldb/slideshow-slidy.git
