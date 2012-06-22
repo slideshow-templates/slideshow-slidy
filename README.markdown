@@ -106,8 +106,11 @@ sample slide show. Example:
 
     $ slideshow -t slidy slidy.text
 
-Open up the generated `slidy.html` page in your browser. Voila. That's it.
+Open up the generated `slidy.html` page
+in your browser. Voila. That's it.
 
+Bonus: Open up the generated `slidy.w3c.html` page
+to see the W3C Blue theme in action in your browser.
 
 ## Questions? Comments?
 
