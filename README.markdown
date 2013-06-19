@@ -4,7 +4,7 @@
 
 A Ruby gem that lets you create slide shows and author slides in plain text
 using a wiki-style markup language that's easy-to-write and easy-to-read.
-More [Slide Show (S9) Project Site &raquo;](http://slideshow.rubyforge.org)
+More [Slide Show (S9) Project Site »](http://slideshow-s9.github.io)
 
 ## Intro 
 
@@ -26,16 +26,16 @@ Note, the Slidy template pack is configured to use the following headers in `sli
 
 If you want to try it yourself, install (fetch) the new template pack. Issue the command:
 
-    $ slideshow -f slidy
+    $ slideshow install slidy
 
 Or as an alternative clone the template pack using `git`. Issue the commands:
 
     $ cd ~/.slideshow/templates
     $ git clone git://github.com/geraldb/slideshow-slidy.git
 
-To check if the new template got installed, use the `-l/--list` switch/command:
+To check if the new template got installed, use the `list` command:
 
-    $ slideshow -l
+    $ slideshow list
 
 Listing something like:
 
@@ -44,10 +44,10 @@ Listing something like:
 
 Tip: To get started use the included quick starter sample. Issue the command:
 
-    $ slideshow -q slidy
+    $ slideshow new -t slidy
 
 Now you will have a copy of the Slidy Quick Starter sample
-(that is, [`slidy.text`](https://raw.github.com/geraldb/slideshow-slidy/master/sample.markdown))
+(that is, [`slidy.text`](https://raw.github.com/slideshow-s9/slideshow-slidy/master/sample.markdown))
 in Markdown in your working folder.
 
 ```
@@ -101,13 +101,12 @@ copyright: Copyright © 2005-2010 W3C (MIT, ERCIM, Keio)
 ```
 
 
-Showtime! Let's use the `-t/--template` switch to generate the
+Showtime! Let's use the `-t/--template` switch to build the
 sample slide show. Example:
 
-    $ slideshow -t slidy slidy.text
+    $ slideshow build slidy.text -t slidy
 
-Open up the generated `slidy.html` page
-in your browser. Voila. That's it.
+Open up the generated `slidy.html` page in your browser. Voila. That's it.
 
 Bonus: Open up the generated `slidy.w3c.html` page
 to see the W3C Blue theme in action in your browser.
