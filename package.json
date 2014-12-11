@@ -1,0 +1,21 @@
+{
+  "name": "slideshow-slidy",
+  "version": "0.1.0",
+  "description": "Slidy (W3C Blue, Blank) - Slide Show (S9) Template Pack",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/slideshow-templates/slideshow-slidy.git"
+  },
+  "keywords": [
+    "slideshow",
+    "slidy",
+    "s9",
+    "slideshow-templates"
+  ],
+  "author": "Gerald Bauer",
+  "license": "Public Domain",
+  "bugs": {
+    "url": "https://github.com/slideshow-templates/slideshow-slidy/issues"
+  },
+  "homepage": "https://github.com/slideshow-templates/slideshow-slidy"
+}
