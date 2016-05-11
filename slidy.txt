@@ -3,17 +3,18 @@
 # Change as desired/needed
 #
 # Configured to use the following headers in slides.html.erb:
-# 
+#
 # author: Your Name Here
 # title: Your Slide Show Title Here
 # copyright: footer: Your Footer Here
 #
 # Questions? Comments?
-# Send them along to the Free Web Slide Show Alternatives (S5, S6, S9, Slidy And Friends) Forum/Mailing List. 
-# http://groups.google.com/group/webslideshow
+# Send them along to the wwwmake forum/mailing list.
+# http://groups.google.com/group/wwwmake
 
-__file__.html slides.blank.html.erb
-__file__.w3c.html slides.w3c.html.erb
+
+__file__.html slides.blank.html
+__file__.w3c.html slides.w3c.html
 
 # scripts
 

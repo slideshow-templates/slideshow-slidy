@@ -6,10 +6,10 @@ A Ruby gem that lets you create slide shows and author slides in plain text
 using a wiki-style markup language that's easy-to-write and easy-to-read.
 More [Slide Show (S9) Project Site »](http://slideshow-s9.github.io)
 
-## Intro 
+## Intro
 
 The [Slidy](http://www.w3.org/Talks/Tools/Slidy2) package by Dave Raggett
-bundled up into 
+bundled up into
 a Slide Show (S9) template pack lets you author your slides
 in a wiki-style markup language (that is, Markdown or Textile) plus
 lets you use text filters and helpers for adding comments, macros,
@@ -20,8 +20,15 @@ Note, the Slidy template pack is configured to use the following headers in `sli
     author: Your Name Here
     title: Your Slide Show Title Here
     copyright: Your Copyright Here
- 
- 
+
+
+## Live Preview
+
+See [`slides.html`](http://slideshow-templates.github.io/slideshow-slidy/slides.html)
+and [`slides.w3c.html`](http://slideshow-templates.github.io/slideshow-slidy/slides.w3c.html).
+
+
+
 ## Try It Yourself - How To Use the Slidy Template Pack
 
 If you want to try it yourself, install (fetch) the new template pack. Issue the command:
@@ -31,7 +38,7 @@ If you want to try it yourself, install (fetch) the new template pack. Issue the
 Or as an alternative clone the template pack using `git`. Issue the commands:
 
     $ cd ~/.slideshow/templates
-    $ git clone git://github.com/geraldb/slideshow-slidy.git
+    $ git clone https://github.com/slideshow-templates/slideshow-slidy.git
 
 To check if the new template got installed, use the `list` command:
 
@@ -47,7 +54,7 @@ Tip: To get started use the included quick starter sample. Issue the command:
     $ slideshow new -t slidy
 
 Now you will have a copy of the Slidy Quick Starter sample
-(that is, [`slidy.text`](https://raw.github.com/slideshow-s9/slideshow-slidy/master/sample.markdown))
+(that is, [`slidy.text`](https://raw.github.com/slideshow-templates/slideshow-slidy/gh-pages/sample.md))
 in Markdown in your working folder.
 
 ```
@@ -114,5 +121,5 @@ to see the W3C Blue theme in action in your browser.
 ## Questions? Comments?
 
 Questions? Comments?
-Send them along to the [Free Web Slide Show Alternatives (S5, S6, S9, Slidy And Friends) Forum/Mailing List](http://groups.google.com/group/webslideshow).
+Send them along to the [wwwmake forum/mailing list](http://groups.google.com/group/wwwmake).
 Thanks!

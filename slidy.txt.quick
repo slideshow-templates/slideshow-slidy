@@ -4,4 +4,4 @@
 # use like
 #  slideshow -q slidy
 
-slidy.text  sample.markdown
+slidy.text  sample.md
