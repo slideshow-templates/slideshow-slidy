@@ -1,16 +1,24 @@
+---
+---
+
+{% if jekyll %}
+  {% assign headers   = site.headers %}
+  {% assign slides    = site.slides %}
+{% endif %}
+
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="Slide Show (S9); see slideshow.rubyforge.org" />
-<meta name="author" content="<%= @headers['author']%>" />
-<meta name="copyright" content="<%= @headers['copyright'] %>" />
-<meta name="duration" content="5" />
+<meta name="generator" content="{{ headers['generator'] }}" />
+<meta name="author"    content="{{ headers['author'] }}" />
+<meta name="copyright" content="{{ headers['copyright'] }}" />
+<meta name="duration"  content="5" />
 <meta name="font-size-adjustment" content="-2" />
 
-<title><%= @headers['title'] %></title>
+<title>{{ headers['title'] }}</title>
 
 <link rel="stylesheet" href="styles/slidy.css" type="text/css" />
 <link rel="stylesheet" href="styles/w3c-blue.css" type="text/css" />
@@ -43,16 +51,16 @@ src="graphics/w3c-logo-white.gif" /></a></object></div>
 
 <img src="graphics/keys2.jpg" alt="Cover page images (keys)"
  class="cover" /><br clear="all" />
-<h1><%= @headers['title'] %></h1>
+<h1>{{ headers['title'] }}</h1>
 
-<p><%= @headers['author']%><br />
+<p>{{ headers['author'] }}<br />
 <br />
 <br />
 <br />
 <br /><em>Hit the space bar or swipe right for next slide</em></p>
 </div>
 
-<%= @content %>
+{{ content }}
 
 </body>
 </html>

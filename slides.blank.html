@@ -1,22 +1,30 @@
+---
+---
+
+{% if jekyll %}
+  {% assign headers   = site.headers %}
+  {% assign slides    = site.slides %}
+{% endif %}
+
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="Slide Show (S9); see slideshow.rubyforge.org" />
-<meta name="author" content="<%= @headers['author']%>" />
-<meta name="copyright" content="<%= @headers['copyright'] %>" />
-<meta name="duration" content="20" />
+<meta name="generator" content="{{ headers['generator'] }}" />
+<meta name="author"    content="{{ headers['author'] }}" />
+<meta name="copyright" content="{{ headers['copyright'] }}" />
+<meta name="duration"  content="20" />
 
-<title><%= @headers['title'] %></title>
+<title>{{ headers['title'] }}</title>
 
 <link rel="stylesheet" href="styles/slidy.css" type="text/css" />
 <script src="scripts/slidy.js" charset="utf-8" type="text/javascript"></script>
 </head>
 <body>
 
-<%= @content %>
+{{ content }}
 
 </body>
 </html>
