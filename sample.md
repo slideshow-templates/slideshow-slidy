@@ -94,7 +94,7 @@ first slide should be as follows:
      <a href="mailto:dsr@w3.org">dsr@w3.org</a></p>
     </div>
 
-The [w3c-blue.css](http://www.w3.org/Talks/Tools/Slidy2/graphics/w3c-blue.css) 
+The [w3c-blue.css](http://www.w3.org/Talks/Tools/Slidy2/graphics/w3c-blue.css)
 style sheet looks for the classes "slide" and "cover" on div
 and img elements using the CSS selector _div.slide.cover_
 
@@ -110,9 +110,9 @@ custom style sheet.
     <div class="background foo">
        ... background content ...
     <div>
-    
+
     ...
-    
+
     <div class="slide foo">
        ... slide content ...
     <div>

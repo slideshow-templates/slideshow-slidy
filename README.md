@@ -24,7 +24,7 @@ Note, the Slidy template pack is configured to use the following headers in `sli
 
 ## Live Preview
 
-See [`slides.html`](http://slideshow-templates.github.io/slideshow-slidy/slides.html)
+See [`slides.blank.html`](http://slideshow-templates.github.io/slideshow-slidy/slides.blank.html)
 and [`slides.w3c.html`](http://slideshow-templates.github.io/slideshow-slidy/slides.w3c.html).
 
 
