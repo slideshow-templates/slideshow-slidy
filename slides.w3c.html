@@ -60,7 +60,11 @@ src="graphics/w3c-logo-white.gif" /></a></object></div>
 <br /><em>Hit the space bar or swipe right for next slide</em></p>
 </div>
 
-{{ content }}
+{% for slide in slides %}
+  <div class="slide">
+    {{ slide.content }}
+  </div>
+{% endfor %}
 
 </body>
 </html>

@@ -24,7 +24,11 @@
 </head>
 <body>
 
-{{ content }}
+{% for slide in slides %}
+  <div class="slide">
+    {{ slide.content }}
+  </div>
+{% endfor %}
 
 </body>
 </html>
