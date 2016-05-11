@@ -1,0 +1,20 @@
+#####
+#  GitHub Pages / Jekyll settings / config
+
+headers:
+  title:     "HTML Slidy: Slide Shows in HTML and XHTML"
+  author:    Dave Raggett
+  copyright: "Copyright © 2005-2010 W3C (MIT, ERCIM, Keio)"
+  generator: GitHub Pages w/ Jekyll
+
+collections:
+  slides:
+    output: false
+
+
+exclude:
+- README.md
+- slidy.txt
+- slidy.txt.quick
+- package.json
+- sample.md
