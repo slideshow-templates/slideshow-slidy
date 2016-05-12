@@ -1,5 +1,11 @@
 # Slidy (W3C Blue, Blank) - Slide Show (S9) Template Pack
 
+## Live Preview
+
+See [`slides.blank.html`](http://slideshow-templates.github.io/slideshow-slidy/slides.blank.html)
+and [`slides.w3c.html`](http://slideshow-templates.github.io/slideshow-slidy/slides.w3c.html).
+
+
 ## What's Slide Show (S9)?
 
 A Ruby gem that lets you create slide shows and author slides in plain text
@@ -20,12 +26,6 @@ Note, the Slidy template pack is configured to use the following headers in `sli
     author: Your Name Here
     title: Your Slide Show Title Here
     copyright: Your Copyright Here
-
-
-## Live Preview
-
-See [`slides.blank.html`](http://slideshow-templates.github.io/slideshow-slidy/slides.blank.html)
-and [`slides.w3c.html`](http://slideshow-templates.github.io/slideshow-slidy/slides.w3c.html).
 
 
 
