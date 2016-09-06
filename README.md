@@ -54,7 +54,7 @@ Tip: To get started use the included quick starter sample. Issue the command:
     $ slideshow new -t slidy
 
 Now you will have a copy of the Slidy Quick Starter sample
-(that is, [`slidy.text`](https://raw.github.com/slideshow-templates/slideshow-slidy/gh-pages/sample.md))
+(that is, [`slidy.text`](https://raw.github.com/slideshow-templates/slideshow-slidy/master/sample.md))
 in Markdown in your working folder.
 
 ```
