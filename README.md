@@ -2,6 +2,8 @@
 
 ## Live Preview
 
+![](preview.png)
+
 See [`slides.blank.html`](http://slideshow-templates.github.io/slideshow-slidy/slides.blank.html)
 and [`slides.w3c.html`](http://slideshow-templates.github.io/slideshow-slidy/slides.w3c.html).
 
